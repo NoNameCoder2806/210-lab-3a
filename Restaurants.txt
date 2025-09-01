@@ -1,0 +1,23 @@
+name:             Domino's Pizza
+address:          901 Sunvalley Blvd Ste 101, Concord, CA
+contact number:   (925) 826-5040
+rating:           2.5
+cuisine type:     American
+price range:      $
+year established: 1960
+
+name:             Pho Sai Gon city 2
+address:          1617 Contra Costa Blvd, Pleasant Hill, CA
+contact number:   (925) 375-1353
+rating:           4.0
+cuisine type:     Vietnamese
+price range:      $
+year established: 2018
+
+name:             McDonald's
+address:          624 Contra Costa Blvd, Pleasant Hill, CA
+contact number:   (925) 677-2121
+rating:           2.5
+cuisine type:     American
+price range       $
+year established: 1940

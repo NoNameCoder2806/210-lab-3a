@@ -59,7 +59,7 @@ int main()
 
     Restaurant elAguila {    // El Aguila Mexican Cuisine
         "El Aguila Mexican Cuisine",
-        "1300 Contra Costa Blvd, Ste 12, Pleasant Hill, CA 94523",
+        "1300 Contra Costa Blvd, Ste 12, Pleasant Hill, CA",
         "(925) 682-4444",
         4.5,
         "Mexican",
