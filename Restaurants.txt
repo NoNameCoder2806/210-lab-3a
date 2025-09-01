@@ -1,3 +1,4 @@
+----- HARD-CODED RESTAURANTS -----
 name:             Domino's Pizza
 address:          901 Sunvalley Blvd Ste 101, Concord, CA
 contact number:   (925) 826-5040
@@ -21,3 +22,44 @@ rating:           2.5
 cuisine type:     American
 price range       $
 year established: 1940
+
+name:             El Aguila Mexican Cuisine
+address:          1300 Contra Costa Blvd, Ste 12, Pleasant Hill, CA
+contact number:   (925) 682-4444
+rating:           4.5
+cuisine type:     Mexican
+price range:      $$
+year established: 2013
+
+----- UNIMPLEMENTED RESTAURANTS -----
+name:             Panda Express
+address:          2380 Monument Blvd, Pleasant Hill, CA
+contact number:   (925) 798-0392
+rating:           4.0
+cuisine type:     Chinese
+price range:      $
+year established: 1983
+
+name:             Dragon’s Spring
+address:          2642 Pleasant Hill Rd, Pleasant Hill, CA
+contact number:   (925) 287-8899
+rating:           4.3
+cuisine type:     Chinese
+price range:      $$
+year established: 2000
+
+name:             Burger King
+address:          677 Contra Costa Blvd, Pleasant Hill, CA
+contact number:   (925) 689-2715
+rating:           3.5
+cuisine type:     American
+price range:      $
+year established: 1953
+
+name:             Benihana
+address:          1989 Diamond Blvd Concord, CA
+contact number:   (925) 827-4220
+rating:           4.2
+cuisine type:     Japanese
+price range:      $$
+year established: 1964
