@@ -1,3 +1,7 @@
+// COMSC-210 | Lab 3A | Dat Hoang Vien
+// IDE used: Visual Code Studio
+
+// Libraries
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -89,7 +93,7 @@ int main()
 }
 
 // Function implementation
-Restaurant consoleInput()
+Restaurant consoleInput()    // Let user input the data for the Restaurant struct object
 {
     // Create a temporary Restaurant struct
     Restaurant res;
@@ -131,7 +135,7 @@ Restaurant consoleInput()
     return res;
 }
 
-void displayStruct(Restaurant res)
+void displayStruct(Restaurant res)    // Display the data of the struct
 {
     // Display the Restaurant struct object's information
     cout << left << setw(32) << "Restaurant's name: " << res.name << endl;
