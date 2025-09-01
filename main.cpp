@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 // Restaurant struct
@@ -7,13 +8,13 @@ struct Restaurant
 {
     string name;              // The name of the restaurant
     string address;           // The address of the restaurant
-    string contactNumber;     // The contact number 
+    string contactNumber;     // The contact number
     string email;             // The contact email
     double rating;            // The rating of the restaurant
     int yearEstablished;      // The year the restaurant was established
 };
 
-// Function prototypes 
+// Function prototypes
 Restaurant consoleInput();             // Let user input the data for the Restaurant struct object
 
 void displayStruct(Restaurant res);    // Display the data of the struct
@@ -29,10 +30,10 @@ int main()
 // Function implementation
 Restaurant consoleInput()
 {
-    // Create a temporary Restaurant struct 
+    // Create a temporary Restaurant struct
     Restaurant res;
 
-    // Get the Restaurant's name 
+    // Get the Restaurant's name
     cout << "Enter the Restaurant's name: ";
     getline(cin, res.name);
 
@@ -64,5 +65,11 @@ Restaurant consoleInput()
 
 void displayStruct(Restaurant res)
 {
-
+    // Display the Restaurant struct object's information
+    cout << setw(32) << "Restaurant's name: " << res.name << endl;
+    cout << setw(32) << "Restaurant's address: " << res.address << endl;
+    cout << setw(32) << "Restaurant's contact number: " << res.contactNumber << endl;
+    cout << setw(32) << "Restaurant's email: " << res.email << endl;
+    cout << setw(32) << "Restaurant's rating: " << res.rating << endl;
+    cout << setw(32) << "Restaurant's established year: " << res.yearEstablished << endl;
 }
