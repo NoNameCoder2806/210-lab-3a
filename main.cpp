@@ -26,7 +26,7 @@ int main()
     // Create 4 Restaurant structs by hard-coding the data 
     Restaurant domino { "Domino's Pizza", "901 Sunvalley Blvd Ste 101, Concord, CA", "(925) 826-5040", 2.5, "American", "$", 1960 };
     Restaurant phoSaiGon { "Pho Sai Gon City 2", "1617 Contra Costa Blvd, Pleasant Hill, CA" , "(925) 375-1353", 4.0, "Vietnamese", "$", 2018 };
-    Restaurant mcDonalds { "McDonald's", "624 Contra Costa Blvd, Pleasant Hill, CA", "(925) 677-2121", 2.5, "American", 1940};
+    Restaurant mcDonalds { "McDonald's", "624 Contra Costa Blvd, Pleasant Hill, CA", "(925) 677-2121", 2.5, "American", "$", 1940 };
 
     // Create 4 Restaurant structs by letting the user enter the data
     Restaurant res0 = consoleInput();
