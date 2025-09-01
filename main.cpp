@@ -92,7 +92,13 @@ int main()
     return 0;
 }
 
-// Function implementation
+// Function implementations
+/*
+    consoleInput()
+    Allows the user to enter information for a Restaurant struct.
+    Arguments: none
+    Returns: a Restaurant struct that contains the user's input
+*/
 Restaurant consoleInput()    // Let user input the data for the Restaurant struct object
 {
     // Create a temporary Restaurant struct
@@ -135,6 +141,12 @@ Restaurant consoleInput()    // Let user input the data for the Restaurant struc
     return res;
 }
 
+/*
+    displayStruct()
+    Display all the information of a Restaurant struct.
+    Arguments: a Restaurant struct
+    Returns: none
+*/
 void displayStruct(Restaurant res)    // Display the data of the struct
 {
     // Display the Restaurant struct object's information
