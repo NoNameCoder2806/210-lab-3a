@@ -69,16 +69,19 @@ int main()
     displayStruct(elAguila);    // Display the Restaurant's information
 
     // Create 4 Restaurant structs by letting the user enter the data
-    cout << "Enter the first Restaurant: " << endl;    // First Restaurant
+    cout << "Enter the information of the first Restaurant: " << endl;    // First Restaurant
     Restaurant res0 = consoleInput();    // Create a new Restaurant struct object
     displayStruct(res0);                 // Display the Restaurant's information
 
+    cout << "Enter the information of the second Restaurant: " << endl;    // Second Restaurant
     Restaurant res1 = consoleInput();    // Create a new Restaurant struct object
     displayStruct(res1);                 // Display the Restaurant's information
 
+    cout << "Enter the information of the third Restaurant: " << endl;    // Third Restaurant
     Restaurant res2 = consoleInput();    // Create a new Restaurant struct object
     displayStruct(res2);                 // Display the Restaurant's information
-    
+
+    cout << "Enter the information of the fourth Restaurant: " << endl;    // Fourth Restaurant
     Restaurant res3 = consoleInput();    // Create a new Restaurant struct object
     displayStruct(res3);                 // Display the Restaurant's information
 
