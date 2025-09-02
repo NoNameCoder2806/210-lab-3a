@@ -9,6 +9,7 @@ using namespace std;
 
 // Constants
 const int FIELD_WIDTH = 32;
+const int CURRENT_YEAR = 2025;
 
 // Restaurant struct
 struct Restaurant
@@ -111,31 +112,82 @@ Restaurant consoleInput()    // Let user input the data for the Restaurant struc
     cout << " - Enter the Restaurant's name: ";
     getline(cin, res.name);
 
+    // Input validation: ask user to enter a name that has at least 1 character
+    while (res.name.length() <= 0)
+    {
+        cout << "Error! Please enter a valid name (at least 1 character): ";
+        getline(cin, res.name);
+    }
+
     // Get the Restaurant's address
     cout << " - Enter the Restaurant's address: ";
     getline(cin, res.address);
 
+    // Input validation: ask user to enter an address that has at least 1 character
+    while (res.address.length() <= 0)
+    {
+        cout << "Error! Please enter a valid address (at least 1 character): ";
+        getline(cin, res.address);
+    }
+
     // Get the Restaurant's contact number
     cout << " - Enter the Restaurant's contact number: ";
     getline(cin, res.contactNumber);
+
+    // Input validation: ask user to enter a contact number that has at least 7 and no more than 15 characters
+    while (res.address.length() < 3 && res.address.length() > 15)
+    {
+        cout << "Error! Please enter a valid contact number (between 3 and 15 characters): ";
+        getline(cin, res.contactNumber);
+    }
 
     // Get the Restaurant's rating
     cout << " - Enter the Restaurant's rating (0.0 to 5.0): ";
     cin >> res.rating;
     cin.ignore(1000, 10);
 
+    // Input validation: ask user to enter a number between 0.0 and 5.0
+    while (res.rating < 0.0 || res.rating > 5.0)
+    {
+        cout << "Error! Please enter a valid rating (between 0.0 and 5.0): ";
+        cin >> res.rating;
+        cin.ignore(1000, 10);
+    }
+
     // Get the Restaurant's cuisine type
     cout << " - Enter the Restaurant's cuisine type (eg. Vietnamese, American, etc): ";
     getline(cin, res.cuisineType);
+
+    // Input validation: ask user to enter at least 1 character for the cuisine type
+    while (res.cuisineType.length() <= 0)
+    {
+        cout << "Error! Please enter a valid cuisine type (at least 1 character): ";
+        getline(cin, res.cuisineType);
+    }
 
     // Get the Restaurant's price range
     cout << " - Enter the Restaurant's price range (eg. $, $$ or $$$): ";
     getline(cin, res.priceRange);
 
+    // Input validation: ask user to enter a the price range as either $, $$ or $$$
+    while (res.priceRange != "$" || res.priceRange != "$$" || res.priceRange != "$$$")
+    {
+        cout << "Error! Please enter a valid price range ($, $$ or $$$): ";
+        getline(cin, res.name);
+    }
+
     // Get the Restaurant's established year
     cout << " - Enter the Restaurant's established year: ";
     cin >> res.yearEstablished;
     cin.ignore(1000, 10);
+
+    // Input validation: ask user to enter a number between 0.0 and 5.0
+    while (res.yearEstablished < 1800 || res.yearEstablished > CURRENT_YEAR)
+    {
+        cout << "Error! Please enter a valid year (between 1800 and 2025): ";
+        cin >> res.yearEstablished;
+        cin.ignore(1000, 10);
+    }
 
     // Enter a new line
     cout << endl;
