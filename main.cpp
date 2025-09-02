@@ -7,6 +7,9 @@
 #include <iomanip>
 using namespace std;
 
+// Constants
+const int FIELD_WIDTH = 32;
+
 // Restaurant struct
 struct Restaurant
 {
@@ -150,13 +153,13 @@ Restaurant consoleInput()    // Let user input the data for the Restaurant struc
 void displayStruct(const Restaurant& res)    // Display the data of the struct
 {
     // Display the Restaurant struct object's information
-    cout << left << setw(32) << "Restaurant's name: " << res.name << endl;
-    cout << left << setw(32) << "Restaurant's address: " << res.address << endl;
-    cout << left << setw(32) << "Restaurant's contact number: " << res.contactNumber << endl;
-    cout << left << setw(32) << "Restaurant's rating: " << res.rating << endl;
-    cout << left << setw(32) << "Restaurant's cuisine type: " << res.cuisineType << endl;
-    cout << left << setw(32) << "Restaurant's price range: " << res.priceRange << endl;
-    cout << left << setw(32) << "Restaurant's established year: " << res.yearEstablished << endl;
+    cout << left << setw(FIELD_WIDTH) << "Restaurant's name: " << res.name << endl;
+    cout << left << setw(FIELD_WIDTH) << "Restaurant's address: " << res.address << endl;
+    cout << left << setw(FIELD_WIDTH) << "Restaurant's contact number: " << res.contactNumber << endl;
+    cout << left << setw(FIELD_WIDTH) << "Restaurant's rating: " << res.rating << endl;
+    cout << left << setw(FIELD_WIDTH) << "Restaurant's cuisine type: " << res.cuisineType << endl;
+    cout << left << setw(FIELD_WIDTH) << "Restaurant's price range: " << res.priceRange << endl;
+    cout << left << setw(FIELD_WIDTH) << "Restaurant's established year: " << res.yearEstablished << endl;
     
     // Enter a new line after displaying the data
     cout << endl;
