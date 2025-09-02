@@ -20,9 +20,9 @@ struct Restaurant
 };
 
 // Function prototypes
-Restaurant consoleInput();             // Let user input the data for the Restaurant struct object
+Restaurant consoleInput();                    // Let user input the data for the Restaurant struct object
 
-void displayStruct(Restaurant res);    // Display the data of the struct
+void displayStruct(const Restaurant& res);    // Display the data of the struct
 
 // Main function
 int main()
@@ -147,7 +147,7 @@ Restaurant consoleInput()    // Let user input the data for the Restaurant struc
     Arguments: a Restaurant struct
     Returns: none
 */
-void displayStruct(Restaurant res)    // Display the data of the struct
+void displayStruct(const Restaurant& res)    // Display the data of the struct
 {
     // Display the Restaurant struct object's information
     cout << left << setw(32) << "Restaurant's name: " << res.name << endl;
