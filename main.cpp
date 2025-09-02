@@ -134,8 +134,8 @@ Restaurant consoleInput()    // Let user input the data for the Restaurant struc
     cout << " - Enter the Restaurant's contact number: ";
     getline(cin, res.contactNumber);
 
-    // Input validation: ask user to enter a contact number that has at least 7 and no more than 15 characters
-    while (res.address.length() < 3 && res.address.length() > 15)
+    // Input validation: ask user to enter a contact number that has at least 3 and no more than 15 characters
+    while (res.contactNumber.length() < 3 || res.contactNumber.length() > 15)
     {
         cout << "Error! Please enter a valid contact number (between 3 and 15 characters): ";
         getline(cin, res.contactNumber);
@@ -170,10 +170,10 @@ Restaurant consoleInput()    // Let user input the data for the Restaurant struc
     getline(cin, res.priceRange);
 
     // Input validation: ask user to enter a the price range as either $, $$ or $$$
-    while (res.priceRange != "$" || res.priceRange != "$$" || res.priceRange != "$$$")
+    while (res.priceRange != "$" && res.priceRange != "$$" && res.priceRange != "$$$")
     {
         cout << "Error! Please enter a valid price range ($, $$ or $$$): ";
-        getline(cin, res.name);
+        getline(cin, res.priceRange);
     }
 
     // Get the Restaurant's established year
